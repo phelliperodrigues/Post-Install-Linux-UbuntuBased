@@ -52,7 +52,7 @@ $ ./post-install.sh
 > Or Contributors/People
 
 | <a href="https://github.com/phelliperodrigues" target="_blank">**Phellipe Rodrigues**</a>
-| :---: |:---:| :---:|
+| :---: |
 | [![FVCproductions](https://avatars1.githubusercontent.com/u/31316802?s=460&u=e4295b447d02baa9fdb872b39e6a13477a82c874&v=4)](https://github.com/phelliperodrigues)   
 
 <!-- | [![FVCproductions](https://avatars1.githubusercontent.com/u/4284691?v=3&s=200)](http://fvcproductions.com) | [![FVCproductions](https://avatars1.githubusercontent.com/u/4284691?v=3&s=200)](http://fvcproductions.com)  |
