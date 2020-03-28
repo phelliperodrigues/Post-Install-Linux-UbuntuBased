@@ -14,8 +14,6 @@ sudo apt install -y synaptic
 sudo apt install -y xvfb
 sudo apt install -y gwenview
 
-
-
 # Manage the repositories that you install
 sudo apt-get install -y software-properties-common
 
@@ -24,6 +22,10 @@ sudo add-apt-repository ppa:webupd8team/java
 sudo apt-get update
 sudo apt-get install -y oracle-java8-installer
 sudo apt-get install -y oracle-java8-set-default
+
+########################################
+# Utilities
+########################################
 
 # Google Chrome (64 bit)
 wget -q -O - https://dl.google.com/linux/linux_signing_key.pub | sudo apt-key add -
@@ -50,9 +52,14 @@ sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys D2C19886
 sudo apt-get update
 sudo apt-get install -y spotify-client
 
+# Shutter (Screenshot tool)
+sudo add-apt-repository -y ppa:shutter/ppa
+sudo apt-get update
+sudo apt-get install -y libgoo-canvas-perl shutter
 
-# Install Python-pip
-sudo apt install -y python-pip
+# Slack (64 bit)
+wget https://downloads.slack-edge.com/linux_releases/slack-desktop-3.0.2-amd64.deb
+sudo gdebi slack-desktop-3.0.2-amd64.deb
 
 # Keepass 2
 # Put plugins in /usr/lib/keepass2/Plugins/ or /usr/lib/keepass2/plugins/
@@ -61,19 +68,16 @@ sudo apt-add-repository ppa:dlech/keepass2-plugins
 sudo apt-get update
 sudo apt-get install -y keepass2 mono-complete keepass2-plugin-application-menu keepass2-plugin-application-indicator
 
+########################################
+# Development
+########################################
 
-# Shutter (Screenshot tool)
-sudo add-apt-repository -y ppa:shutter/ppa
-sudo apt-get update
-sudo apt-get install -y libgoo-canvas-perl shutter
+# Install Python-pip
+sudo apt install -y python-pip
 
 # GitKraken (64 bit)
 wget https://release.gitkraken.com/linux/gitkraken-amd64.deb
 sudo gdebi gitkraken-amd64.deb
-
-# Slack (64 bit)
-wget https://downloads.slack-edge.com/linux_releases/slack-desktop-3.0.2-amd64.deb
-sudo gdebi slack-desktop-3.0.2-amd64.deb
 
 # Docker
 sudo apt-get remove docker docker-engine docker.io containerd runc
@@ -101,11 +105,8 @@ echo "gem: --no-document" >> ~/.gemrc
 gem install rails -v 6.0.2.2
 rails -v
 
-
-
 #Setting Up MySQL
 sudo apt-get install -y mysql-server mysql-client libmysqlclient-dev mysql-workbench
-
 
 #Setting Up PostgreSQL
 sudo apt install -y postgresql-11 libpq-dev
@@ -140,7 +141,6 @@ code --install-extension dotjoshjohnson.xml
 code --install-extension bungcip.better-toml
 code --install-extension grapecity.gc-excelviewer
 
-
 #zsh
 sudo apt install zsh -y
 sudo apt-get install powerline fonts-powerline -y
@@ -148,14 +148,24 @@ sh -c "$(wget -O- https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools
 curl -Lo install.sh https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh
 sh install.sh
 
+########################################
+# Package Management
+########################################
+
 #snap
 sudo apt install -y snapd
 sudo snap install snap-store
 
-
 #idea
 sudo snap install intellij-idea-ultimate --classic
 
+#flatpak
+sudo apt install -y flatpak
+sudo apt install -y gnome-software-plugin-flatpak
+flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
+
+#franz
+flatpak install flathub com.meetfranz.Franz
 
 ########################################
 # end
