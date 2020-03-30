@@ -51,11 +51,11 @@ $ ./post-install.sh
 
 > Or Contributors/People
 
-| <a href="https://github.com/phelliperodrigues" target="_blank">**Phellipe Rodrigues**</a>
-| :---: |
-| [![FVCproductions](https://avatars1.githubusercontent.com/u/31316802?s=460&u=e4295b447d02baa9fdb872b39e6a13477a82c874&v=4)](https://github.com/phelliperodrigues)   
+| <a href="https://github.com/phelliperodrigues" target="_blank">**Phellipe Rodrigues**</a> | <a href="https://github.com/phelliperodrigues" target="_blank">*Wendreo Fernandes*</a>
+| :---: | :---: |
+| [![Phellipe Rodrigues](https://avatars1.githubusercontent.com/u/31316802?s=460&u=e4295b447d02baa9fdb872b39e6a13477a82c874&v=4)](https://github.com/phelliperodrigues) | [![Wendreo Fernandes](https://avatars3.githubusercontent.com/u/17891980?s=260&u=09442c5efd6a13bbea859d54146d35dd486e52ec&v=4)](https://github.com/wendreof)
 
-<!-- | [![FVCproductions](https://avatars1.githubusercontent.com/u/4284691?v=3&s=200)](http://fvcproductions.com) | [![FVCproductions](https://avatars1.githubusercontent.com/u/4284691?v=3&s=200)](http://fvcproductions.com)  |
+ <!--| [![FVCproductions](https://avatars1.githubusercontent.com/u/4284691?v=3&s=200)](http://fvcproductions.com)  |
 | <a href="http://github.com/fvcproductions" target="_blank">`github.com/fvcproductions`</a> 
 | <a href="http://github.com/fvcproductions" target="_blank">`github.com/fvcproductions`</a> | <a href="http://github.com/fvcproductions" target="_blank">`github.com/fvcproductions`</a> |
 
