@@ -1,5 +1,9 @@
 #!/bin/bash
-
+echo -e "\e[96m---------------------------------------------------------------------------------"
+echo -e "\e[96m---------------------------------------------------------------------------------"
+echo -e "\e[96m********************    Script Post Instalation Ubuntu    ***********************"
+echo -e "\e[96m---------------------------------------------------------------------------------"
+echo -e "\e[96m---------------------------------------------------------------------------------"
 echo -e "\e[96m                _____          _     _____           _        _ "
 echo -e "\e[96m               |  __ \        | |   |_   _|         | |      | |"
 echo -e "\e[96m               | |__) |__  ___| |_    | |  _ __  ___| |_ __ _| |"
@@ -13,11 +17,14 @@ echo -e "\e[95mDevelopers: Phellipe Rodrigues / Wendreo Fernandes"
 echo -e "\e[95mRepository: \e[92mhttps://github.com/phelliperodrigues/Post-Install-Linux-UbuntuBased"
 echo -e "\e[96m---------------------------------------------------------------------------------"
 echo -e "\e[96m---------------------------------------------------------------------------------"
-echo -e "\e[96m********************      \e[5mThanks For Use This Script      \e[25m***********************"
+echo -e "\e[96m********************      Thanks For Use This Script      ***********************"
 echo -e "\e[96m---------------------------------------------------------------------------------"
 echo -e "\e[96m---------------------------------------------------------------------------------"
 echo " "
 echo " "
+echo -e "\e[91m---- \e[5mWARNING \e[25m----"
+echo -e "\x1b[91mThis script has installations of the APT / FLATPAK / SNAP packages"
+echo -e "\x1b[91mIt was developed and tested on UBUNTU 18.04"
 
 
  sleep 5
@@ -35,7 +42,7 @@ echo -e '\e[34m########################################'
 echo -e '\e[34m# UTILITARIOS'
 echo -e '\e[34m########################################'
 
-echo -e "\e[33mInstall Commouns: [Ss,Nn] Padrao(S)"
+echo -e "\e[95mInstall Commouns: [Ss,Nn] - Default(S)"
 read continuar
 case "$continuar" in  
     s|S|"")
@@ -60,7 +67,7 @@ esac
 echo " "
 echo " "
 
-echo -e "\e[33mInstall Google Chrome: : [Ss,Nn] Padrao(S)"
+echo -e "\e[95mInstall Google Chrome: : [Ss,Nn] - Default(S)"
 read continuar
 
 case "$continuar" in  
@@ -79,7 +86,7 @@ esac
 echo " "
 echo " "
 
-echo -e "\e[33mInstall Codecs: : [Ss,Nn] Padrao(S)"
+echo -e "\e[95mInstall Codecs: : [Ss,Nn] - Default(S)"
 read continuar
 
 case "$continuar" in  
@@ -97,7 +104,7 @@ esac
 echo " "
 echo " "
 
-echo -e "\e[33mInstall Archiving's: : [Ss,Nn] Padrao(S)"
+echo -e "\e[95mInstall Archiving's: : [Ss,Nn] - Default(S)"
 read continuar
 
 case "$continuar" in  
@@ -114,7 +121,7 @@ esac
 echo " "
 echo " "
 
-echo -e "\e[33mInstall Font Microsoft : [Ss,Nn] Padrao(S)"
+echo -e "\e[95mInstall Font Microsoft : [Ss,Nn] - Default(S)"
 read continuar
 
 case "$continuar" in  
@@ -131,7 +138,7 @@ esac
 echo " "
 echo " "
 
-echo -e "\e[33mInstall Teamviewer : [Ss,Nn] Padrao(S)"
+echo -e "\e[95mInstall Teamviewer : [Ss,Nn] - Default(S)"
 read continuar
 
 case "$continuar" in  
@@ -149,7 +156,7 @@ esac
 echo " "
 echo " "
 
-echo -e "\e[33mInstall Spotify : [Ss,Nn] Padrao(S)"
+echo -e "\e[95mInstall Spotify : [Ss,Nn] - Default(S)"
 read continuar
 
 case "$continuar" in  
@@ -167,7 +174,7 @@ echo " "
 echo " "
 
 
-echo -e "\e[33mInstall Shutter : [Ss,Nn] Padrao(S)"
+echo -e "\e[95mInstall Shutter : [Ss,Nn] - Default(S)"
 read continuar
 
 case "$continuar" in  
@@ -185,7 +192,7 @@ case "$continuar" in
 esac
 echo " "
 echo " "
-echo -e "\e[33mInstall Keepass : [Ss,Nn] Padrao(S)"
+echo -e "\e[95mInstall Keepass : [Ss,Nn] - Default(S)"
 read continuar
 
 case "$continuar" in  
@@ -206,7 +213,7 @@ esac
 echo " "
 echo " "
 
-echo -e "\e[33mInstall wps : [Ss,Nn] Padrao(S)"
+echo -e "\e[95mInstall wps : [Ss,Nn] - Default(S)"
 read continuar
 
 case "$continuar" in  
@@ -223,7 +230,7 @@ echo " "
 echo " "
 
 
-echo -e "\e[33mInstall zsh : [Ss,Nn] Padrao(S)"
+echo -e "\e[95mInstall zsh : [Ss,Nn] - Default(S)"
 read continuar
 
 case "$continuar" in  
@@ -248,7 +255,7 @@ echo -e '\e[34m########################################'
 echo -e '\e[34m# Development'
 echo -e '\e[34m########################################'
 
-echo -e "\e[33mInstall Oracle Java: : [Ss,Nn] Padrao(S)"
+echo -e "\e[95mInstall Oracle Java: : [Ss,Nn] - Default(S)"
 read continuar
 case "$continuar" in  
     s|S|"")
@@ -266,7 +273,7 @@ esac
 echo " "
 echo " "
 
-echo -e "\e[33mInstall Python : [Ss,Nn] Padrao(S)"
+echo -e "\e[95mInstall Python : [Ss,Nn] - Default(S)"
 read continuar
 
 case "$continuar" in  
@@ -284,7 +291,7 @@ esac
 echo " "
 echo " "
 
-echo -e "\e[33mInstall GitKraken : [Ss,Nn] Padrao(S)"
+echo -e "\e[95mInstall GitKraken : [Ss,Nn] - Default(S)"
 read continuar
 
 case "$continuar" in  
@@ -302,7 +309,7 @@ esac
 echo " "
 echo " "
 
-echo -e "\e[33mInstall Docker : [Ss,Nn] Padrao(S)"
+echo -e "\e[95mInstall Docker : [Ss,Nn] - Default(S)"
 read continuar
 
 case "$continuar" in  
@@ -329,7 +336,7 @@ esac
 echo " "
 echo " "
 
-echo -e "\e[33mInstall MySQL : [Ss,Nn] Padrao(S)"
+echo -e "\e[95mInstall MySQL : [Ss,Nn] - Default(S)"
 read continuar
 
 case "$continuar" in  
@@ -346,7 +353,7 @@ esac
 echo " "
 echo " "
 
-echo -e "\e[33mInstall PostgreSQL : [Ss,Nn] Padrao(S)"
+echo -e "\e[95mInstall PostgreSQL : [Ss,Nn] - Default(S)"
 read continuar
 
 case "$continuar" in  
@@ -367,7 +374,7 @@ esac
 echo " "
 echo " "
 
-echo -e "\e[33mInstall postman : [Ss,Nn] Padrao(S)"
+echo -e "\e[95mInstall postman : [Ss,Nn] - Default(S)"
 read continuar
 
 case "$continuar" in  
@@ -383,7 +390,7 @@ esac
 echo " "
 echo " "
 
-echo -e "\e[33mInstall insomnia : [Ss,Nn] Padrao(S)"
+echo -e "\e[95mInstall insomnia : [Ss,Nn] - Default(S)"
 read continuar
 
 case "$continuar" in  
@@ -400,7 +407,7 @@ echo " "
 echo " "
 
 
-echo -e "\e[33mInstall datagrip : [Ss,Nn] Padrao(S)"
+echo -e "\e[95mInstall datagrip : [Ss,Nn] - Default(S)"
 read continuar
 
 case "$continuar" in  
@@ -416,7 +423,7 @@ esac
 echo " "
 echo " "
 
-echo -e "\e[33mInstall code : [Ss,Nn] Padrao(S)"
+echo -e "\e[95mInstall code : [Ss,Nn] - Default(S)"
 read continuar
 
 case "$continuar" in  
@@ -472,7 +479,7 @@ esac
 echo " "
 echo " "
 
-echo -e "\e[33mInstall circleci : [Ss,Nn] Padrao(S)"
+echo -e "\e[95mInstall circleci : [Ss,Nn] - Default(S)"
 read continuar
 
 case "$continuar" in  
@@ -488,7 +495,7 @@ esac
 echo " "
 echo " "
 
-echo -e "\e[33mInstall android-studio : [Ss,Nn] Padrao(S)"
+echo -e "\e[95mInstall android-studio : [Ss,Nn] - Default(S)"
 read continuar
 
 case "$continuar" in  
@@ -504,7 +511,7 @@ esac
 echo " "
 echo " "
 
-echo -e "\e[33mInstall androidsdk : [Ss,Nn] Padrao(S)"
+echo -e "\e[95mInstall androidsdk : [Ss,Nn] - Default(S)"
 read continuar
 
 case "$continuar" in  
@@ -521,7 +528,7 @@ echo " "
 echo " "
 
 
-echo -e "\e[33mInstall intellij-idea-community : [Ss,Nn] Padrao(S)"
+echo -e "\e[95mInstall intellij-idea-community : [Ss,Nn] - Default(S)"
 read continuar
 
 case "$continuar" in  
@@ -539,7 +546,7 @@ echo " "
 
 
 
-echo -e "\e[33mInstall intellij-idea-ultimate : [Ss,Nn] Padrao(S)"
+echo -e "\e[95mInstall intellij-idea-ultimate : [Ss,Nn] - Default(S)"
 read continuar
 
 case "$continuar" in  
@@ -566,7 +573,7 @@ echo -e '\e[34m########################################'
 echo -e '\e[34m# Messagering/Internet'
 echo -e '\e[34m########################################'
 
-echo -e "\e[33mInstall franz : [Ss,Nn] Padrao(S)"
+echo -e "\e[95mInstall franz : [Ss,Nn] - Default(S)"
 read continuar
 
 case "$continuar" in  
@@ -583,7 +590,7 @@ esac
 echo " "
 echo " "
 
-echo -e "\e[33mInstall zoom : [Ss,Nn] Padrao(S)"
+echo -e "\e[95mInstall zoom : [Ss,Nn] - Default(S)"
 read continuar
 
 case "$continuar" in  
@@ -599,7 +606,7 @@ esac
 echo " "
 echo " "
 
-echo -e "\e[33mInstall slack : [Ss,Nn] Padrao(S)"
+echo -e "\e[95mInstall slack : [Ss,Nn] - Default(S)"
 read continuar
 
 case "$continuar" in  
@@ -615,13 +622,22 @@ esac
 echo " "
 echo " "
 
-
-
-
-
-########################################
-# end
-########################################
+echo -e '\e[34m########################################'
+echo -e '\e[34m# UPDATE FINISH'
+echo -e '\e[34m########################################'
 sudo apt update -y
 sudo apt upgrade -y
 sudo apt autoremove -y
+echo -e "\e[96m---------------------------------------------------------------------------------"
+echo -e "\e[96m---------------------------------------------------------------------------------"
+echo -e "\e[96m********************      \e[5mThanks For Use This Script      \e[25m***********************"
+echo -e "\e[96m---------------------------------------------------------------------------------"
+echo -e "\e[96m---------------------------------------------------------------------------------"
+sleep 5
+echo " "
+echo " "
+echo -e '\e[34m########################################'
+echo -e '\e[34m# REBOOT IN 15s - CTRL+C to Cancel Reboot'
+echo -e '\e[34m########################################'
+sleep 15
+reboot
