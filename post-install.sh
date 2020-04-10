@@ -273,6 +273,24 @@ esac
 echo " "
 echo " "
 
+
+echo -e "\e[95mInstall NodeJs: : [Ss,Nn] - Default(S)"
+read continuar
+case "$continuar" in  
+    s|S|"")
+	echo -e "\e[92m>>>>>>>>>>>>>>>>>BEGIN NodeJs<<<<<<<<<<<<<<<<<<<"
+	curl -sL https://deb.nodesource.com/setup_12.x | sudo -E bash -
+	sudo apt-get install -y nodejs
+	echo -e "\e[92m>>>>>>>>>>>>>>>>>END NodeJs<<<<<<<<<<<<<<<<<<<"
+;;
+*)
+    
+;;
+esac
+echo " "
+echo " "
+
+
 echo -e "\e[95mInstall Python : [Ss,Nn] - Default(S)"
 read continuar
 
