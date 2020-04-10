@@ -1,15 +1,42 @@
 #!/bin/bash
 
+echo -e "\e[96m                _____          _     _____           _        _ "
+echo -e "\e[96m               |  __ \        | |   |_   _|         | |      | |"
+echo -e "\e[96m               | |__) |__  ___| |_    | |  _ __  ___| |_ __ _| |"
+echo -e "\e[96m               |  ___/ _ \/ __| __|   | | | '_ \/ __| __/ _\` | |"
+echo -e "\e[96m               | |  | (_) \\__ \\ |_   _| |_| | | \\__ \\ || (_| | |"
+echo -e "\e[96m               |_|   \\___/|___/\\__| |_____|_| |_|___/\\__\\__,_|_|"
+echo " "
+echo " "
+echo -e "\e[96m---------------------------------------------------------------------------------"
+echo -e "\e[95mDevelopers: Phellipe Rodrigues / Wendreo Fernandes" 
+echo -e "\e[95mRepository: \e[92mhttps://github.com/phelliperodrigues/Post-Install-Linux-UbuntuBased"
+echo -e "\e[96m---------------------------------------------------------------------------------"
+echo -e "\e[96m---------------------------------------------------------------------------------"
+echo -e "\e[96m********************      \e[5mThanks For Use This Script      \e[25m***********************"
+echo -e "\e[96m---------------------------------------------------------------------------------"
+echo -e "\e[96m---------------------------------------------------------------------------------"
+echo " "
+echo " "
+
+
+ sleep 5
+                                                  
+
 echo -e '\e[34m########################################'
-echo -e '\e[34m# General'
+echo -e '\e[34m# UPDATE'
 echo -e '\e[34m########################################'
 sudo apt update -y
 sudo apt upgrade -y
 sudo apt install -y --fix-broken
+echo " "
+echo " "
+echo -e '\e[34m########################################'
+echo -e '\e[34m# UTILITARIOS'
+echo -e '\e[34m########################################'
 
 echo -e "\e[33mInstall Commouns: [Ss,Nn] Padrao(S)"
 read continuar
-
 case "$continuar" in  
     s|S|"")
 	echo -e "\e[92m>>>>>>>>>>>>>>>>>BEGIN Commons<<<<<<<<<<<<<<<<<<<"
@@ -20,34 +47,18 @@ case "$continuar" in
 	sudo apt install -y xvfb
 	sudo apt install -y gwenview
 	sudo apt install -y gdebi
+	sudo apt intall -y snapd
+	sudo apt install -y flatpak
+	sudo apt install -y gnome-software-plugin-flatpak
+	flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
 	echo -e "\e[92m>>>>>>>>>>>>>>>>>END Commons<<<<<<<<<<<<<<<<<<<"
 ;;
 *)
-    echo "PROCESSO FINALIZADO"
+    
 ;;
 esac
-
-echo -e "\e[33mInstall Oracle Java: : [Ss,Nn] Padrao(S)"
-read continuar
-
-case "$continuar" in  
-    s|S|"")
-	echo -e "\e[92m>>>>>>>>>>>>>>>>>BEGIN JAVA<<<<<<<<<<<<<<<<<<<"
-	# Install Oracle Java
-	sudo apt install default-jdk
-	echo "Version Java"
-	java -version
-	echo -e "\e[92m>>>>>>>>>>>>>>>>>END JAVA<<<<<<<<<<<<<<<<<<<"
-;;
-*)
-    echo "PROCESSO FINALIZADO"
-;;
-esac
-
-
-########################################
-# Utilities
-########################################
+echo " "
+echo " "
 
 echo -e "\e[33mInstall Google Chrome: : [Ss,Nn] Padrao(S)"
 read continuar
@@ -62,10 +73,11 @@ case "$continuar" in
 	echo -e "\e[92m>>>>>>>>>>>>>>>>>END CHROME<<<<<<<<<<<<<<<<<<<"
 ;;
 *)
-    echo "PROCESSO FINALIZADO"
+    
 ;;
 esac
-
+echo " "
+echo " "
 
 echo -e "\e[33mInstall Codecs: : [Ss,Nn] Padrao(S)"
 read continuar
@@ -79,10 +91,11 @@ case "$continuar" in
 	echo -e "\e[92m>>>>>>>>>>>>>>>>>END codecs<<<<<<<<<<<<<<<<<<<"
 ;;
 *)
-    echo "PROCESSO FINALIZADO"
+    
 ;;
 esac
-
+echo " "
+echo " "
 
 echo -e "\e[33mInstall Archiving's: : [Ss,Nn] Padrao(S)"
 read continuar
@@ -95,10 +108,11 @@ case "$continuar" in
 	echo -e "\e[92m>>>>>>>>>>>>>>>>>END RAR<<<<<<<<<<<<<<<<<<<"
 ;;
 *)
-    echo "PROCESSO FINALIZADO"
+    
 ;;
 esac
-
+echo " "
+echo " "
 
 echo -e "\e[33mInstall Font Microsoft : [Ss,Nn] Padrao(S)"
 read continuar
@@ -111,10 +125,11 @@ case "$continuar" in
 	echo -e "\e[92m>>>>>>>>>>>>>>>>>END FONT<<<<<<<<<<<<<<<<<<<"
 ;;
 *)
-    echo "PROCESSO FINALIZADO"
+    
 ;;
 esac
-
+echo " "
+echo " "
 
 echo -e "\e[33mInstall Teamviewer : [Ss,Nn] Padrao(S)"
 read continuar
@@ -128,10 +143,11 @@ case "$continuar" in
 	echo -e "\e[92m>>>>>>>>>>>>>>>>>END TEAMVIWER<<<<<<<<<<<<<<<<<<<"
 ;;
 *)
-    echo "PROCESSO FINALIZADO"
+    
 ;;
 esac
-
+echo " "
+echo " "
 
 echo -e "\e[33mInstall Spotify : [Ss,Nn] Padrao(S)"
 read continuar
@@ -140,17 +156,15 @@ case "$continuar" in
     s|S|"")
 	echo -e "\e[92m>>>>>>>>>>>>>>>>>BEGIN SPOTIFY<<<<<<<<<<<<<<<<<<<"
 	# Spotify
-	sudo apt-add-repository -y "deb http://repository.spotify.com stable non-free"
-	sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys D2C19886
-	sudo apt-get update
-	sudo apt-get install -y spotify-client
+	sudo snap install spotify
 	echo -e "\e[92m>>>>>>>>>>>>>>>>>END SPOTIFY<<<<<<<<<<<<<<<<<<<"
 ;;
 *)
-    echo "PROCESSO FINALIZADO"
+    
 ;;
 esac
-
+echo " "
+echo " "
 
 
 echo -e "\e[33mInstall Shutter : [Ss,Nn] Padrao(S)"
@@ -166,10 +180,11 @@ case "$continuar" in
 	echo -e "\e[92m>>>>>>>>>>>>>>>>>END SHUTTER<<<<<<<<<<<<<<<<<<<"
 ;;
 *)
-    echo "PROCESSO FINALIZADO"
+    
 ;;
 esac
-
+echo " "
+echo " "
 echo -e "\e[33mInstall Keepass : [Ss,Nn] Padrao(S)"
 read continuar
 
@@ -185,9 +200,28 @@ case "$continuar" in
 	echo -e "\e[92m>>>>>>>>>>>>>>>>>END KEEPASS<<<<<<<<<<<<<<<<<<<"
 ;;
 *)
-    echo "PROCESSO FINALIZADO"
+    
 ;;
 esac
+echo " "
+echo " "
+
+echo -e "\e[33mInstall wps : [Ss,Nn] Padrao(S)"
+read continuar
+
+case "$continuar" in  
+    s|S|"")
+	echo -e "\e[92m>>>>>>>>>>>>>>>>>BEGIN wps<<<<<<<<<<<<<<<<<<<"
+	sudo snap install wps-office-all-lang-no-internet
+	echo -e "\e[92m>>>>>>>>>>>>>>>>>END wps<<<<<<<<<<<<<<<<<<<"
+;;
+*)
+    
+;;
+esac
+echo " "
+echo " "
+
 
 echo -e "\e[33mInstall zsh : [Ss,Nn] Padrao(S)"
 read continuar
@@ -202,16 +236,35 @@ case "$continuar" in
 	echo -e "\e[92m>>>>>>>>>>>>>>>>>END zsh<<<<<<<<<<<<<<<<<<<"
 ;;
 *)
-    echo "PROCESSO FINALIZADO"
+    
 ;;
 esac
+echo " "
+echo " "
 
 
 
+echo -e '\e[34m########################################'
+echo -e '\e[34m# Development'
+echo -e '\e[34m########################################'
 
-########################################
-# Development
-########################################
+echo -e "\e[33mInstall Oracle Java: : [Ss,Nn] Padrao(S)"
+read continuar
+case "$continuar" in  
+    s|S|"")
+	echo -e "\e[92m>>>>>>>>>>>>>>>>>BEGIN JAVA<<<<<<<<<<<<<<<<<<<"
+	# Install Oracle Java
+	sudo apt install default-jdk
+	echo "Version Java"
+	java -version
+	echo -e "\e[92m>>>>>>>>>>>>>>>>>END JAVA<<<<<<<<<<<<<<<<<<<"
+;;
+*)
+    
+;;
+esac
+echo " "
+echo " "
 
 echo -e "\e[33mInstall Python : [Ss,Nn] Padrao(S)"
 read continuar
@@ -225,10 +278,11 @@ case "$continuar" in
 	echo -e "\e[92m>>>>>>>>>>>>>>>>>END PYTHON<<<<<<<<<<<<<<<<<<<"
 ;;
 *)
-    echo "PROCESSO FINALIZADO"
+    
 ;;
 esac
-
+echo " "
+echo " "
 
 echo -e "\e[33mInstall GitKraken : [Ss,Nn] Padrao(S)"
 read continuar
@@ -242,10 +296,11 @@ case "$continuar" in
 	echo -e "\e[92m>>>>>>>>>>>>>>>>>END KRAKEN<<<<<<<<<<<<<<<<<<<"
 ;;
 *)
-    echo "PROCESSO FINALIZADO"
+    
 ;;
 esac
-
+echo " "
+echo " "
 
 echo -e "\e[33mInstall Docker : [Ss,Nn] Padrao(S)"
 read continuar
@@ -268,10 +323,11 @@ case "$continuar" in
 	echo -e "\e[92m>>>>>>>>>>>>>>>>>END DOCKER<<<<<<<<<<<<<<<<<<<"
 ;;
 *)
-    echo "PROCESSO FINALIZADO"
+    
 ;;
 esac
-
+echo " "
+echo " "
 
 echo -e "\e[33mInstall MySQL : [Ss,Nn] Padrao(S)"
 read continuar
@@ -284,10 +340,11 @@ case "$continuar" in
 	echo -e "\e[92m>>>>>>>>>>>>>>>>>END MYSQL<<<<<<<<<<<<<<<<<<<"
 ;;
 *)
-    echo "PROCESSO FINALIZADO"
+    
 ;;
 esac
-
+echo " "
+echo " "
 
 echo -e "\e[33mInstall PostgreSQL : [Ss,Nn] Padrao(S)"
 read continuar
@@ -297,71 +354,18 @@ case "$continuar" in
 	echo -e "\e[92m>>>>>>>>>>>>>>>>>BEGIN POSTGRES<<<<<<<<<<<<<<<<<<<"
 	#Setting Up PostgreSQL
 	sudo apt install -y postgresql-11 libpq-dev
+	wget --quiet -O - https://www.postgresql.org/media/keys/ACCC4CF8.asc | sudo apt-key add -
+ 	sudo sh -c 'echo "deb http://apt.postgresql.org/pub/repos/apt/ `lsb_release -cs`-pgdg main" >> /etc/apt/sources.list.d/pgdg.list'
+	sudo apt update
+ 	sudo apt install -y pgadmin4 pgadmin4-apache2 -y
 	echo -e "\e[92m>>>>>>>>>>>>>>>>>END POSTGRES<<<<<<<<<<<<<<<<<<<"
 ;;
 *)
-    echo "PROCESSO FINALIZADO"
+    
 ;;
 esac
-
-
-
-
-
-
-########################################
-# Package Management
-########################################
-
-echo -e "\e[33mInstall flatpak : [Ss,Nn] Padrao(S)"
-read continuar
-
-case "$continuar" in  
-    s|S|"")
-	echo -e "\e[92m>>>>>>>>>>>>>>>>>BEGIN FLATPAK<<<<<<<<<<<<<<<<<<<"
-	#flatpak
-	sudo apt install -y flatpak
-	sudo apt install -y gnome-software-plugin-flatpak
-	flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
-	echo -e "\e[92m>>>>>>>>>>>>>>>>>END FLATPAK<<<<<<<<<<<<<<<<<<<"
-;;
-*)
-    echo "PROCESSO FINALIZADO"
-;;
-esac
-
-
-echo -e "\e[33mInstall franz : [Ss,Nn] Padrao(S)"
-read continuar
-
-case "$continuar" in  
-    s|S|"")
-	echo -e "\e[92m>>>>>>>>>>>>>>>>>BEGIN FRANZ<<<<<<<<<<<<<<<<<<<"
-	#franz
-	flatpak install flathub com.meetfranz.Franz
-	echo -e "\e[92m>>>>>>>>>>>>>>>>>END FRANZ<<<<<<<<<<<<<<<<<<<"
-;;
-*)
-    echo "PROCESSO FINALIZADO"
-;;
-esac
-
-########################################
-# Package Snaps
-########################################
-echo -e "\e[33mInstall zoom : [Ss,Nn] Padrao(S)"
-read continuar
-
-case "$continuar" in  
-    s|S|"")
-	echo -e "\e[92m>>>>>>>>>>>>>>>>>BEGIN zoom<<<<<<<<<<<<<<<<<<<"
-	sudo snap install zoom-client
-	echo -e "\e[92m>>>>>>>>>>>>>>>>>END zoom<<<<<<<<<<<<<<<<<<<"
-;;
-*)
-    echo "PROCESSO FINALIZADO"
-;;
-esac
+echo " "
+echo " "
 
 echo -e "\e[33mInstall postman : [Ss,Nn] Padrao(S)"
 read continuar
@@ -373,10 +377,11 @@ case "$continuar" in
 	echo -e "\e[92m>>>>>>>>>>>>>>>>>END postman<<<<<<<<<<<<<<<<<<<"
 ;;
 *)
-    echo "PROCESSO FINALIZADO"
+    
 ;;
 esac
-
+echo " "
+echo " "
 
 echo -e "\e[33mInstall insomnia : [Ss,Nn] Padrao(S)"
 read continuar
@@ -388,10 +393,11 @@ case "$continuar" in
 	echo -e "\e[92m>>>>>>>>>>>>>>>>>END insomnia<<<<<<<<<<<<<<<<<<<"
 ;;
 *)
-    echo "PROCESSO FINALIZADO"
+    
 ;;
 esac
-
+echo " "
+echo " "
 
 
 echo -e "\e[33mInstall datagrip : [Ss,Nn] Padrao(S)"
@@ -404,10 +410,11 @@ case "$continuar" in
 	echo -e "\e[92m>>>>>>>>>>>>>>>>>END datagrip<<<<<<<<<<<<<<<<<<<"
 ;;
 *)
-    echo "PROCESSO FINALIZADO"
+    
 ;;
 esac
-
+echo " "
+echo " "
 
 echo -e "\e[33mInstall code : [Ss,Nn] Padrao(S)"
 read continuar
@@ -459,10 +466,11 @@ case "$continuar" in
 	echo -e "\e[92m>>>>>>>>>>>>>>>>>END code<<<<<<<<<<<<<<<<<<<"
 ;;
 *)
-    echo "PROCESSO FINALIZADO"
+    
 ;;
 esac
-
+echo " "
+echo " "
 
 echo -e "\e[33mInstall circleci : [Ss,Nn] Padrao(S)"
 read continuar
@@ -474,24 +482,122 @@ case "$continuar" in
 	echo -e "\e[92m>>>>>>>>>>>>>>>>>END circleci<<<<<<<<<<<<<<<<<<<"
 ;;
 *)
-    echo "PROCESSO FINALIZADO"
+    
 ;;
 esac
+echo " "
+echo " "
 
-echo -e "\e[33mInstall wps : [Ss,Nn] Padrao(S)"
+echo -e "\e[33mInstall android-studio : [Ss,Nn] Padrao(S)"
 read continuar
 
 case "$continuar" in  
     s|S|"")
-	echo -e "\e[92m>>>>>>>>>>>>>>>>>BEGIN wps<<<<<<<<<<<<<<<<<<<"
-	sudo snap install wps-office-all-lang-no-internet
-	echo -e "\e[92m>>>>>>>>>>>>>>>>>END wps<<<<<<<<<<<<<<<<<<<"
+	echo -e "\e[92m>>>>>>>>>>>>>>>>>BEGIN android-studio<<<<<<<<<<<<<<<<<<<"
+	sudo snap install android-studio --classic
+	echo -e "\e[92m>>>>>>>>>>>>>>>>>END android-studio<<<<<<<<<<<<<<<<<<<"
 ;;
 *)
-    echo "PROCESSO FINALIZADO"
+    
 ;;
 esac
+echo " "
+echo " "
 
+echo -e "\e[33mInstall androidsdk : [Ss,Nn] Padrao(S)"
+read continuar
+
+case "$continuar" in  
+    s|S|"")
+	echo -e "\e[92m>>>>>>>>>>>>>>>>>BEGIN androidsdk<<<<<<<<<<<<<<<<<<<"
+	sudo snap install androidsdk
+	echo -e "\e[92m>>>>>>>>>>>>>>>>>END androidsdk<<<<<<<<<<<<<<<<<<<"
+;;
+*)
+    
+;;
+esac
+echo " "
+echo " "
+
+
+echo -e "\e[33mInstall intellij-idea-community : [Ss,Nn] Padrao(S)"
+read continuar
+
+case "$continuar" in  
+    s|S|"")
+	echo -e "\e[92m>>>>>>>>>>>>>>>>>BEGIN intellij-idea-community<<<<<<<<<<<<<<<<<<<"
+	sudo snap install intellij-idea-community --classic
+	echo -e "\e[92m>>>>>>>>>>>>>>>>>END intellij-idea-community<<<<<<<<<<<<<<<<<<<"
+;;
+*)
+    
+;;
+esac
+echo " "
+echo " "
+
+
+
+echo -e "\e[33mInstall intellij-idea-ultimate : [Ss,Nn] Padrao(S)"
+read continuar
+
+case "$continuar" in  
+    s|S|"")
+	echo -e "\e[92m>>>>>>>>>>>>>>>>>BEGIN intellij-idea-ultimate<<<<<<<<<<<<<<<<<<<"
+	sudo snap install intellij-idea-ultimate --classic
+	echo -e "\e[92m>>>>>>>>>>>>>>>>>END intellij-idea-ultimate<<<<<<<<<<<<<<<<<<<"
+;;
+*)
+    
+;;
+esac
+echo " "
+echo " "
+
+
+
+
+
+
+
+
+echo -e '\e[34m########################################'
+echo -e '\e[34m# Messagering/Internet'
+echo -e '\e[34m########################################'
+
+echo -e "\e[33mInstall franz : [Ss,Nn] Padrao(S)"
+read continuar
+
+case "$continuar" in  
+    s|S|"")
+	echo -e "\e[92m>>>>>>>>>>>>>>>>>BEGIN FRANZ<<<<<<<<<<<<<<<<<<<"
+	#franz
+	flatpak install flathub com.meetfranz.Franz
+	echo -e "\e[92m>>>>>>>>>>>>>>>>>END FRANZ<<<<<<<<<<<<<<<<<<<"
+;;
+*)
+    
+;;
+esac
+echo " "
+echo " "
+
+echo -e "\e[33mInstall zoom : [Ss,Nn] Padrao(S)"
+read continuar
+
+case "$continuar" in  
+    s|S|"")
+	echo -e "\e[92m>>>>>>>>>>>>>>>>>BEGIN zoom<<<<<<<<<<<<<<<<<<<"
+	sudo snap install zoom-client
+	echo -e "\e[92m>>>>>>>>>>>>>>>>>END zoom<<<<<<<<<<<<<<<<<<<"
+;;
+*)
+    
+;;
+esac
+echo " "
+echo " "
 
 echo -e "\e[33mInstall slack : [Ss,Nn] Padrao(S)"
 read continuar
@@ -503,10 +609,11 @@ case "$continuar" in
 	echo -e "\e[92m>>>>>>>>>>>>>>>>>END slack<<<<<<<<<<<<<<<<<<<"
 ;;
 *)
-    echo "PROCESSO FINALIZADO"
+    
 ;;
 esac
-
+echo " "
+echo " "
 
 
 
