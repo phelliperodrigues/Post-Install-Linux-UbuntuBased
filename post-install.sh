@@ -51,7 +51,7 @@ case "$continuar" in
 	sudo apt install -y xvfb
 	sudo apt install -y gwenview
 	sudo apt install -y gdebi
-	sudo apt intall -y snapd
+	sudo apt install -y snapd
 	sudo apt install -y flatpak
 	sudo apt install -y gnome-software-plugin-flatpak
 	flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
