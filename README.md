@@ -9,6 +9,39 @@
 > Install all tools main with only a command
 
 
+## What do we do?
+ 1) Update your system
+ 2) Install Softwares Commouns Ex(`APT` _wget, curl, filezila, synaptc, gdebi, SNAPd, flatpack, ..._)
+ 3) [Google Chrome](https://www.google.com/intl/pt-BR/chrome/)(`.deb`)
+ 4) Ubuntu Codecs(`APT`)
+ 5) Archiving's(`APT`  _rar, unace, p7zip-rar, sharutils, arj, lunzip, lzip_)
+ 6) Microsoft Fonts(`APT`)
+ 7) [TeamViewer](https://www.teamviewer.com/pt-br/)(`.deb`)
+ 8) [Spotify](https://www.spotify.com/br/)(`SNAP`)
+ 9) [KeyPass](http://www.keypass.com.br/)(`APT`)
+ 10) [WPS Office](https://www.wps.com/pt-BR/)(`SNAP`)
+ 11) [ZSH/OhMyZsh](https://ohmyz.sh/)(`APT`)
+ 12) [Java](https://www.java.com/pt_BR/)(`APT`)
+ 13) [NodeJs](https://nodejs.org/en/)(`APT`  _NPN, Yarn_)
+ 14) [Python3](https://www.python.org/)(`APT`  Pip3)
+ 15) [GitKraken](https://www.gitkraken.com/)(`.deb`)
+ 16) [Docker](https://www.docker.com/)(`APT`)
+ 17) [Mysql](https://www.mysql.com/)(`APT` _Client, Workbench_)
+ 18) [PostgreSQL](https://www.postgresql.org/)(`APT`  _PgAdmin4_)
+ 19) [Postman](https://www.postman.com/)(`SNAP`)
+ 20) [Insominia](https://insomnia.rest/)(`SNAP`)
+ 21) [DataGrid](https://www.jetbrains.com/datagrip/)(`SNAP`)
+ 22) [Visual Studio Code](https://code.visualstudio.com/)(`SNAP`, _Extentions_)
+ 23) [CircleCI](https://circleci.com/)(`SNAP`)
+ 24) [Android Studio](https://developer.android.com/studio)(`SNAP`)
+ 25) [Android SDK Manager](https://developer.android.com/studio/command-line/sdkmanager)(`SNAP`)
+ 26) [IntelliJ Community](https://www.jetbrains.com/idea/)(`SNAP`)
+ 27) [IntelliJ Ultimate](https://www.jetbrains.com/idea/)(`SNAP`)
+ 28) [Franz](https://meetfranz.com/)(`FLATPAK`)
+ 29) [Zoom](https://zoom.us/pt-pt/meetings.html)(`SNAP`)
+ 30) [Slack](https://slack.com/intl/pt-br/)(`SNAP`)
+
+
 
 
 ### Clone
@@ -48,8 +81,6 @@ $ ./post-install.sh
 ---
 
 ## Team
-
-> Or Contributors/People
 
 | <a href="https://github.com/phelliperodrigues" target="_blank">**Phellipe Rodrigues**</a> | <a href="https://github.com/phelliperodrigues" target="_blank">*Wendreo Fernandes*</a>
 | :---: | :---: |

@@ -11,7 +11,6 @@ echo -e "\e[96m               |  ___/ _ \/ __| __|   | | | '_ \/ __| __/ _\` | |
 echo -e "\e[96m               | |  | (_) \\__ \\ |_   _| |_| | | \\__ \\ || (_| | |"
 echo -e "\e[96m               |_|   \\___/|___/\\__| |_____|_| |_|___/\\__\\__,_|_|"
 echo " "
-echo " "
 echo -e "\e[96m---------------------------------------------------------------------------------"
 echo -e "\e[95mDevelopers: Phellipe Rodrigues / Wendreo Fernandes" 
 echo -e "\e[95mRepository: \e[92mhttps://github.com/phelliperodrigues/Post-Install-Linux-UbuntuBased"
@@ -20,7 +19,6 @@ echo -e "\e[96m-----------------------------------------------------------------
 echo -e "\e[96m********************      Thanks For Use This Script      ***********************"
 echo -e "\e[96m---------------------------------------------------------------------------------"
 echo -e "\e[96m---------------------------------------------------------------------------------"
-echo " "
 echo " "
 echo -e "\e[91m---- \e[5mWARNING \e[25m----"
 echo -e "\x1b[91mThis script has installations of the APT / FLATPAK / SNAP packages"
@@ -36,7 +34,6 @@ echo -e '\e[34m########################################'
 sudo apt update -y
 sudo apt upgrade -y
 sudo apt install -y --fix-broken
-echo " "
 echo " "
 echo -e '\e[34m########################################'
 echo -e '\e[34m# UTILITARIOS'
@@ -65,7 +62,6 @@ case "$continuar" in
 ;;
 esac
 echo " "
-echo " "
 
 echo -e "\e[95mInstall Google Chrome: : [Ss,Nn] - Default(S)"
 read continuar
@@ -84,7 +80,6 @@ case "$continuar" in
 ;;
 esac
 echo " "
-echo " "
 
 echo -e "\e[95mInstall Codecs: : [Ss,Nn] - Default(S)"
 read continuar
@@ -102,7 +97,6 @@ case "$continuar" in
 ;;
 esac
 echo " "
-echo " "
 
 echo -e "\e[95mInstall Archiving's: : [Ss,Nn] - Default(S)"
 read continuar
@@ -119,7 +113,6 @@ case "$continuar" in
 ;;
 esac
 echo " "
-echo " "
 
 echo -e "\e[95mInstall Font Microsoft : [Ss,Nn] - Default(S)"
 read continuar
@@ -135,7 +128,6 @@ case "$continuar" in
     
 ;;
 esac
-echo " "
 echo " "
 
 echo -e "\e[95mInstall Teamviewer : [Ss,Nn] - Default(S)"
@@ -154,7 +146,6 @@ case "$continuar" in
 ;;
 esac
 echo " "
-echo " "
 
 echo -e "\e[95mInstall Spotify : [Ss,Nn] - Default(S)"
 read continuar
@@ -171,27 +162,8 @@ case "$continuar" in
 ;;
 esac
 echo " "
-echo " "
 
 
-echo -e "\e[95mInstall Shutter : [Ss,Nn] - Default(S)"
-read continuar
-
-case "$continuar" in  
-    s|S|"")
-	echo -e "\e[92m>>>>>>>>>>>>>>>>>BEGIN SHUTTER<<<<<<<<<<<<<<<<<<<"
-	# Shutter (Screenshot tool)
-	sudo add-apt-repository -y ppa:shutter/ppa
-	sudo apt-get update
-	sudo apt-get install -y libgoo-canvas-perl shutter
-	echo -e "\e[92m>>>>>>>>>>>>>>>>>END SHUTTER<<<<<<<<<<<<<<<<<<<"
-;;
-*)
-    
-;;
-esac
-echo " "
-echo " "
 echo -e "\e[95mInstall Keepass : [Ss,Nn] - Default(S)"
 read continuar
 
@@ -211,7 +183,6 @@ case "$continuar" in
 ;;
 esac
 echo " "
-echo " "
 
 echo -e "\e[95mInstall wps : [Ss,Nn] - Default(S)"
 read continuar
@@ -226,7 +197,6 @@ case "$continuar" in
     
 ;;
 esac
-echo " "
 echo " "
 
 
@@ -246,7 +216,6 @@ case "$continuar" in
     
 ;;
 esac
-echo " "
 echo " "
 
 
@@ -271,7 +240,6 @@ case "$continuar" in
 ;;
 esac
 echo " "
-echo " "
 
 
 echo -e "\e[95mInstall NodeJs: : [Ss,Nn] - Default(S)"
@@ -281,13 +249,14 @@ case "$continuar" in
 	echo -e "\e[92m>>>>>>>>>>>>>>>>>BEGIN NodeJs<<<<<<<<<<<<<<<<<<<"
 	curl -sL https://deb.nodesource.com/setup_12.x | sudo -E bash -
 	sudo apt-get install -y nodejs
+	sudo apt-get update
+	sudo apt-get install yarn
 	echo -e "\e[92m>>>>>>>>>>>>>>>>>END NodeJs<<<<<<<<<<<<<<<<<<<"
 ;;
 *)
     
 ;;
 esac
-echo " "
 echo " "
 
 
@@ -307,7 +276,6 @@ case "$continuar" in
 ;;
 esac
 echo " "
-echo " "
 
 echo -e "\e[95mInstall GitKraken : [Ss,Nn] - Default(S)"
 read continuar
@@ -324,7 +292,6 @@ case "$continuar" in
     
 ;;
 esac
-echo " "
 echo " "
 
 echo -e "\e[95mInstall Docker : [Ss,Nn] - Default(S)"
@@ -352,7 +319,6 @@ case "$continuar" in
 ;;
 esac
 echo " "
-echo " "
 
 echo -e "\e[95mInstall MySQL : [Ss,Nn] - Default(S)"
 read continuar
@@ -368,7 +334,6 @@ case "$continuar" in
     
 ;;
 esac
-echo " "
 echo " "
 
 echo -e "\e[95mInstall PostgreSQL : [Ss,Nn] - Default(S)"
@@ -390,7 +355,6 @@ case "$continuar" in
 ;;
 esac
 echo " "
-echo " "
 
 echo -e "\e[95mInstall postman : [Ss,Nn] - Default(S)"
 read continuar
@@ -405,7 +369,6 @@ case "$continuar" in
     
 ;;
 esac
-echo " "
 echo " "
 
 echo -e "\e[95mInstall insomnia : [Ss,Nn] - Default(S)"
@@ -422,7 +385,6 @@ case "$continuar" in
 ;;
 esac
 echo " "
-echo " "
 
 
 echo -e "\e[95mInstall datagrip : [Ss,Nn] - Default(S)"
@@ -438,7 +400,6 @@ case "$continuar" in
     
 ;;
 esac
-echo " "
 echo " "
 
 echo -e "\e[95mInstall code : [Ss,Nn] - Default(S)"
@@ -495,7 +456,6 @@ case "$continuar" in
 ;;
 esac
 echo " "
-echo " "
 
 echo -e "\e[95mInstall circleci : [Ss,Nn] - Default(S)"
 read continuar
@@ -510,7 +470,6 @@ case "$continuar" in
     
 ;;
 esac
-echo " "
 echo " "
 
 echo -e "\e[95mInstall android-studio : [Ss,Nn] - Default(S)"
@@ -527,7 +486,6 @@ case "$continuar" in
 ;;
 esac
 echo " "
-echo " "
 
 echo -e "\e[95mInstall androidsdk : [Ss,Nn] - Default(S)"
 read continuar
@@ -542,7 +500,6 @@ case "$continuar" in
     
 ;;
 esac
-echo " "
 echo " "
 
 
@@ -560,7 +517,6 @@ case "$continuar" in
 ;;
 esac
 echo " "
-echo " "
 
 
 
@@ -577,7 +533,6 @@ case "$continuar" in
     
 ;;
 esac
-echo " "
 echo " "
 
 
@@ -606,7 +561,6 @@ case "$continuar" in
 ;;
 esac
 echo " "
-echo " "
 
 echo -e "\e[95mInstall zoom : [Ss,Nn] - Default(S)"
 read continuar
@@ -621,7 +575,6 @@ case "$continuar" in
     
 ;;
 esac
-echo " "
 echo " "
 
 echo -e "\e[95mInstall slack : [Ss,Nn] - Default(S)"
@@ -638,7 +591,6 @@ case "$continuar" in
 ;;
 esac
 echo " "
-echo " "
 
 echo -e '\e[34m########################################'
 echo -e '\e[34m# UPDATE FINISH'
@@ -652,7 +604,6 @@ echo -e "\e[96m********************      \e[5mThanks For Use This Script      \e
 echo -e "\e[96m---------------------------------------------------------------------------------"
 echo -e "\e[96m---------------------------------------------------------------------------------"
 sleep 5
-echo " "
 echo " "
 echo -e '\e[34m########################################'
 echo -e '\e[34m# REBOOT IN 15s - CTRL+C to Cancel Reboot'
